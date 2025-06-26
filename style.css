@@ -269,7 +269,7 @@ nav ul li a.btn {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 100px;
+    padding-left: 80px;
     align-items: start;
     margin-bottom: 20px;
 }
@@ -301,7 +301,8 @@ nav ul li a.btn {
 
 .sub-child-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 500px;
     border: 1PX solid rgba(225,225, 225, 1);
@@ -309,14 +310,14 @@ nav ul li a.btn {
     padding: 10px;
 }
 .sub-child-2 img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 .content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .heading {
     font-size: 18px;
@@ -330,8 +331,8 @@ nav ul li a.btn {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    align-items: end;
+    /* margin-top: 10px; */
 }
 .start-now {
     border: none;
@@ -420,12 +421,18 @@ footer {
 
 @media screen and (min-width : 320px) and (max-width : 768px) 
 {
+
+  .parent {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
     .child-1 {
         padding-left: 0;
         margin-bottom: 10px;
+        align-items: center;
     }
     .child-text {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .child-2 {
@@ -433,21 +440,22 @@ footer {
         justify-content: unset;
     }
     .sub-child-2 {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         width: 100%;
     }
     .sub-child-2 img {
-        width: 80px;
-        height: 80px;
-    }
-    .content {
-        align-items: center;
+        width: 75px;
+        height: 75px;
     }
     .heading {
-        font-size: 18px;
+        font-size: 16px;
     }
     .sub-heading {
         font-size: 14px;
+    }
+    .button-time {
+      margin-top: 10px;
+      align-items: start;
     }
 }
